@@ -84,9 +84,11 @@ header.mainhead.scrolled{box-shadow:0 4px 20px rgba(15,31,61,.06);}
 .nav-links a{padding:9px 12px;font-size:14.5px;font-weight:600;color:var(--ink-2);border-radius:8px;transition:background .15s,color .15s;white-space:nowrap;}
 .nav-links a:hover{background:var(--bg-soft-2);color:var(--accent-ink);}
 .nav-actions{display:flex;align-items:center;gap:10px;margin-left:auto;}
-.lang{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;font-size:12.5px;font-weight:700;color:var(--ink-2);background:var(--bg-soft);border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .15s;letter-spacing:.02em;}
-.lang:hover{border-color:var(--border-strong);background:#fff;color:var(--ink);}
-.lang svg{width:14px;height:14px;stroke:var(--muted);}
+.lang{display:inline-flex;align-items:center;gap:1px;padding:3px;background:var(--bg-soft);border:1px solid var(--border);border-radius:9px;cursor:pointer;transition:border-color .15s;}
+.lang:hover{border-color:var(--border-strong);}
+.lang .seg{padding:4px 9px;font-size:12px;font-weight:700;color:var(--muted-2);border-radius:6px;transition:background .15s,color .15s;letter-spacing:.03em;line-height:1;}
+html[data-lang="ko"] .lang .s-ko{background:var(--accent);color:#fff;}
+html[data-lang="en"] .lang .s-en{background:var(--accent);color:#fff;}
 
 /* hero */
 .hero{position:relative;overflow:hidden;padding:44px 0 70px;background:var(--bg);}
@@ -290,12 +292,11 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="OKRI home">
       <img class="mark" src="/okri-mark.png" alt="OKRI" width="98" height="97" />
-      <span class="wm"><b>OKRI</b><span class="dv"></span><span class="ko"><span class="kr">옥천당 한의약연구소</span><span class="en">Okcheondang KM Research</span></span></span>
+      <span class="wm"><b>OKRI</b><span class="dv"></span><span class="ko"><span class="kr">옥천당 한의약연구소</span><span class="en">OKCHUNDANG KM Research Institute</span></span></span>
     </a>
     <div class="nav-actions">
-      <button class="lang" id="langToggle" aria-label="Toggle language">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
-        <span class="lang-label">EN</span>
+      <button class="lang" id="langToggle" aria-label="언어 전환 KR/EN" role="switch">
+        <span class="seg s-ko">KR</span><span class="seg s-en">EN</span>
       </button>
     </div>
   </div>
@@ -362,7 +363,7 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
         <div class="stat"><div class="n"><span class="kr">데이터</span><span class="en">Data</span></div><div class="k"><span class="kr">전통적 임상 경험을 데이터로 축적</span><span class="en">Accumulating traditional clinical experience as data</span></div></div>
         <div class="stat"><div class="n"><span class="kr">과학화</span><span class="en">Science</span></div><div class="k"><span class="kr">축적된 경험을 과학의 언어로 검증</span><span class="en">Verifying experience in the language of science</span></div></div>
         <div class="stat"><div class="n"><span class="kr">표준화</span><span class="en">Standardize</span></div><div class="k"><span class="kr">누구나 재현 가능한 품질로 표준화</span><span class="en">Into quality anyone can reproduce</span></div></div>
-        <div class="stat"><div class="n"><span class="kr">일상화</span><span class="en">Everyday</span></div><div class="k"><span class="kr">한의학의 일상화, 글로벌 지평 확장</span><span class="en">Everyday Korean medicine, global horizons</span></div></div>
+        <div class="stat"><div class="n"><span class="kr">일상화</span><span class="en">Everyday</span></div><div class="k"><span class="kr">한의학의 일상화, 글로벌 지평 확장</span><span class="en">Bringing Korean medicine into everyday life and the world</span></div></div>
       </div>
     </div>
   </div>
@@ -501,7 +502,7 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
       <div class="foot-brand">
         <a href="#top" class="brand">
           <img class="mark" src="/okri-mark-white.png" alt="OKRI" width="98" height="97" />
-          <span class="wm"><b>OKRI</b><span class="dv"></span><span class="ko"><span class="kr">옥천당 한의약연구소</span><span class="en">Okcheondang KM Research</span></span></span>
+          <span class="wm"><b>OKRI</b><span class="dv"></span><span class="ko"><span class="kr">옥천당 한의약연구소</span><span class="en">OKCHUNDANG KM Research Institute</span></span></span>
         </a>
         <p><span class="kr">전통과 혁신이 만나는 한의학 지식 플랫폼이자 싱크탱크.<br>한의학을 일상에 더 가깝게, 그리고 세계로 확장합니다.</span><span class="en">A knowledge platform and think tank where tradition meets innovation — bringing Korean medicine closer to life, and to the world.</span></p>
       </div>
