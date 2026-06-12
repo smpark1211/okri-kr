@@ -95,8 +95,8 @@ header.mainhead.scrolled{box-shadow:0 4px 20px rgba(15,31,61,.06);}
 .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.12fr .88fr;gap:52px;align-items:center;}
 .hero-tag{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 7px;margin-bottom:22px;background:#fff;border:1px solid var(--border);border-radius:999px;font-size:12.5px;font-weight:600;color:var(--ink-2);box-shadow:var(--shadow);}
 .hero-tag i{display:inline-flex;align-items:center;justify-content:center;height:22px;padding:0 9px;border-radius:999px;background:var(--navy);color:#fff;font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.06em;}
-.hero h1{font-size:clamp(32px,4.6vw,52px);font-weight:800;color:var(--ink);letter-spacing:-.032em;line-height:1.14;}
-.hero h1 .hl{color:var(--accent);}
+.hero h1{font-size:clamp(32px,4.6vw,52px);font-weight:800;color:var(--ink);letter-spacing:-.032em;line-height:1.14;word-break:keep-all;}
+.hero h1 .hl{color:var(--accent);white-space:nowrap;}
 .hero .lede{margin-top:22px;font-size:clamp(16px,1.55vw,18.5px);color:var(--ink-2);line-height:1.72;max-width:560px;}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}
 .hero-meta{display:flex;flex-wrap:wrap;gap:7px 22px;margin-top:30px;}
@@ -130,12 +130,12 @@ header.mainhead.scrolled{box-shadow:0 4px 20px rgba(15,31,61,.06);}
 /* vision */
 .vision{background:linear-gradient(160deg,#0f1f3d 0%,#16304f 60%,#1a3a63 100%);color:#fff;text-align:center;padding:84px 0;position:relative;overflow:hidden;}
 .vision::before{content:"";position:absolute;inset:0;opacity:.5;background:radial-gradient(40% 60% at 80% 0%, rgba(63,138,255,.3), transparent 70%),radial-gradient(36% 50% at 12% 100%, rgba(95,208,138,.16), transparent 70%);}
-.vision .wrap{position:relative;max-width:940px;}
+.vision .wrap{position:relative;max-width:1020px;}
 .vision .ey{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;letter-spacing:.12em;color:#7fa8e8;text-transform:uppercase;}
 .vision .ey::before,.vision .ey::after{content:"";width:24px;height:1.5px;background:rgba(127,168,232,.5);}
 .vision h2{margin-top:20px;font-size:clamp(27px,4vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.26;}
 .vision h2 .hl{color:#7fb8ff;}
-.vision p{margin-top:22px;font-size:clamp(16px,1.7vw,18.5px);color:#c3d2e8;line-height:1.78;max-width:720px;margin-left:auto;margin-right:auto;}
+.vision p{margin-top:22px;font-size:15.5px;color:#c3d2e8;line-height:1.7;margin-left:auto;margin-right:auto;}
 
 /* about */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;}
@@ -364,11 +364,9 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
       <p class="about-lead" style="margin-top:18px;"><span class="kr">오랜 전통 속에 머물러 있던 한의학을 현대적 시각으로 재해석하고, 새로운 기술과 융합하여 모두가 쉽게 경험할 수 있는 상품으로 만듭니다.</span><span class="en">We reinterpret a long tradition through a modern lens and fuse it with new technology — into products everyone can easily experience.</span></p>
     </div>
     <div class="about-body reveal">
-      <p><span class="kr">OKRI는 임상 현장의 가치 있는 경험을 발굴하고, 이를 실제 제품으로 구현하여 현실에 실현하는 과정의 교두보 역할을 수행합니다.</span><span class="en">OKRI serves as a bridgehead — discovering the valuable experience of clinical practice and realizing it as tangible products.</span></p>
-      <p><span class="kr">한의사들이 각자의 진료실에서 쌓아온 다양하고 소중한 경험을 공유하고, 서로의 언어로 표준화하며, 다양한 전문가들의 지식과 경험을 통합하고, 이를 한의약 산업과 연결하여 시장성 있는 제품으로 다시 경험을 공유함으로써 한의학의 지평을 넓히는 데 기여하고자 합니다.</span><span class="en">We help Korean-medicine doctors share the hard-won experience of their own clinics, standardize it into a common language, integrate the knowledge of many experts, and connect it to the Korean-medicine industry as marketable products — broadening the horizon of Korean medicine.</span></p>
       <div class="about-stats">
-        <div class="stat"><div class="n"><span class="kr">교두보</span><span class="en">Bridgehead</span></div><div class="k"><span class="kr">경험 → 제품으로 실현</span><span class="en">From experience to product</span></div></div>
-        <div class="stat"><div class="n">6<em><span class="kr"> 영역</span><span class="en"> fields</span></em></div><div class="k"><span class="kr">핵심 연구 분야</span><span class="en">Core research areas</span></div></div>
+        <div class="stat"><div class="n"><span class="kr">교두보</span><span class="en">Bridgehead</span></div><div class="k"><span class="kr">임상 경험을 다듬어 사업화로</span><span class="en">Refining clinical experience to market</span></div></div>
+        <div class="stat"><div class="n"><span class="kr">과학·표준·디지털</span><span class="en">Science·standard·digital</span></div><div class="k"><span class="kr">한의학의 과학화·표준화·디지털화</span><span class="en">Scientize, standardize, digitalize</span></div></div>
         <div class="stat"><div class="n"><span class="kr">싱크탱크</span><span class="en">Think tank</span></div><div class="k"><span class="kr">전통과 혁신의 지식 플랫폼</span><span class="en">Knowledge platform</span></div></div>
         <div class="stat"><div class="n"><span class="kr">일상화·세계화</span><span class="en">Everyday &amp; global</span></div><div class="k"><span class="kr">한의학의 지평 확장</span><span class="en">Broadening KM's horizon</span></div></div>
       </div>
@@ -422,7 +420,7 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
     <div class="section-head reveal">
       <span class="eyebrow"><span class="kr">연구 영역</span><span class="en">Research areas</span></span>
       <h2><span class="kr">여섯 갈래의 연구</span><span class="en">Six lines of research</span></h2>
-      <p><span class="kr">약속처방과 한약 표준화부터 진료 모델, 의료기기, 디지털·AI, 그리고 한의학의 세계화까지 — 한의학의 가치를 넓히는&nbsp;연구.</span><span class="en">From prescriptions and herbal standardization to care models, medical devices, digital &amp; AI, and the globalization of Korean medicine.</span></p>
+      <p><span class="kr">약속처방·한약 표준화부터 진료 모델·의료기기·디지털, 한의학 세계화까지.</span><span class="en">From prescriptions and herbal standardization to care models, devices, digital, and global Korean medicine.</span></p>
     </div>
     <div class="cards">
       <div class="card reveal"><div class="no">01</div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 17a2 2 0 0 0 1.7 3h10.2a2 2 0 0 0 1.7-3L14 9.5V3"/><path d="M7.5 14h9"/></svg></div><h3><span class="kr">약속처방 개발 · 한약 표준화</span><span class="en">Prescriptions &amp; standardization</span></h3><p><span class="kr">약속처방을 발굴·개발하고, 한약재와 한약의 품질을 과학적으로 표준화·근거화합니다.</span><span class="en">Discovering and developing shared prescriptions, and standardizing herbs and medicines on a scientific basis.</span></p></div>
