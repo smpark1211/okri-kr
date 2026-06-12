@@ -75,9 +75,9 @@ header.mainhead{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86
 header.mainhead.scrolled{box-shadow:0 4px 20px rgba(15,31,61,.06);}
 .nav{display:flex;align-items:center;gap:20px;height:70px;}
 .brand{display:flex;align-items:center;gap:12px;color:var(--ink);}
-.brand .mark{width:38px;height:38px;flex:0 0 auto;}
+.brand .mark{height:36px;width:auto;flex:0 0 auto;}
 .brand .wm{display:flex;align-items:center;gap:11px;}
-.brand .wm b{font-size:20px;font-weight:800;letter-spacing:.05em;color:var(--ink);}
+.brand .wm b{font-size:21px;font-weight:800;letter-spacing:.05em;color:#3c7288;}
 .brand .wm .dv{width:1px;height:17px;background:var(--border-strong);}
 .brand .wm .ko{font-size:14.5px;font-weight:600;color:var(--ink-2);letter-spacing:-.01em;}
 .nav-links{display:flex;align-items:center;gap:1px;margin-left:auto;}
@@ -190,7 +190,7 @@ header.mainhead.scrolled{box-shadow:0 4px 20px rgba(15,31,61,.06);}
 .cap .ic svg{width:22px;height:22px;stroke:var(--accent-ink);stroke-width:1.7;}
 .cap h3{font-size:16.5px;font-weight:700;color:var(--ink);}
 .cap p{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.62;}
-.approach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:760px;}
+.approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .appr{position:relative;padding:32px 28px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);}
 .appr .num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;background:var(--navy);color:#fff;font-size:14px;font-weight:800;letter-spacing:.03em;}
 .appr h3{margin-top:16px;font-size:19.5px;font-weight:700;color:var(--ink);letter-spacing:-.01em;}
@@ -287,12 +287,7 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
 <header class="mainhead" id="top">
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="OKRI home">
-      <svg class="mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="1" y="1" width="34" height="34" rx="10" fill="#eaf1fb" stroke="#cfe0f7"/>
-        <path d="M18 8c3.4 2.7 5.2 5.4 5.2 8.9 0 3.9-2.7 6.9-5.2 8.9-2.5-2-5.2-5-5.2-8.9 0-3.5 1.8-6.2 5.2-8.9Z" fill="#117a43" fill-opacity=".14" stroke="#117a43" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M18 10.4v14.6" stroke="#117a43" stroke-width="1.4" stroke-linecap="round"/>
-        <circle cx="18" cy="17.2" r="2.7" fill="#1457b8"/>
-      </svg>
+      <img class="mark" src="/okri-mark.png" alt="OKRI" width="98" height="97" />
       <span class="wm"><b>OKRI</b><span class="dv"></span><span class="ko"><span class="kr">옥천당 한의약연구소</span><span class="en">Okcheondang KM Research</span></span></span>
     </a>
     <nav class="nav-links">
@@ -465,11 +460,12 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow"><span class="kr">접근 방식</span><span class="en">Our approach</span></span>
-      <h2><span class="kr">연구를 대하는 두 가지 원칙</span><span class="en">Two principles in how we research</span></h2>
+      <h2><span class="kr">연구를 대하는 세 가지 원칙</span><span class="en">Three principles in how we research</span></h2>
     </div>
     <div class="approach-grid">
-      <div class="appr reveal"><div class="num">01</div><h3><span class="kr">근거 우선</span><span class="en">Evidence first</span></h3><p><span class="kr">직접 검증하지 않은 효능·수치는 주장하지 않습니다. 임상·문헌 근거로 평가하고, 불확실한 것은 불확실하다고 명시합니다.</span><span class="en">We don't claim efficacy or figures we haven't verified. We judge on evidence, and label uncertainty as such.</span></p></div>
-      <div class="appr reveal"><div class="num">02</div><h3><span class="kr">표준화</span><span class="en">Standardization</span></h3><p><span class="kr">경험·제형·품질을 정량 가능한 표준으로 만듭니다. 재현 가능한 품질이 곧 신뢰할 수 있는 한의학이라 믿습니다.</span><span class="en">We turn experience, formulation, and quality into measurable standards — reproducible quality is trustworthy medicine.</span></p></div>
+      <div class="appr reveal"><div class="num">01</div><h3><span class="kr">현장에서 출발</span><span class="en">Rooted in practice</span></h3><p><span class="kr">연구는 진료실의 실제 임상 경험에서 시작합니다. 한의사들이 현장에서 쌓아 온 문제의식을 모든 연구의 출발점으로 삼습니다.</span><span class="en">Research begins with real clinical experience in the consulting room — the questions clinicians accumulate in practice are our starting point.</span></p></div>
+      <div class="appr reveal"><div class="num">02</div><h3><span class="kr">근거 우선</span><span class="en">Evidence first</span></h3><p><span class="kr">직접 검증하지 않은 효능·수치는 주장하지 않습니다. 임상·문헌 근거로 평가하고, 불확실한 것은 불확실하다고 명시합니다.</span><span class="en">We don't claim efficacy or figures we haven't verified. We judge on evidence, and label uncertainty as such.</span></p></div>
+      <div class="appr reveal"><div class="num">03</div><h3><span class="kr">표준화</span><span class="en">Standardization</span></h3><p><span class="kr">경험·제형·품질을 정량 가능한 표준으로 만듭니다. 재현 가능한 품질이 곧 신뢰할 수 있는 한의학이라 믿습니다.</span><span class="en">We turn experience, formulation, and quality into measurable standards — reproducible quality is trustworthy medicine.</span></p></div>
     </div>
   </div>
 </section>
@@ -517,7 +513,7 @@ footer{background:var(--navy);color:#aebcd4;padding:56px 0 30px;}
     <div class="foot-top">
       <div class="foot-brand">
         <a href="#top" class="brand">
-          <svg class="mark" viewBox="0 0 36 36" fill="none" aria-hidden="true"><rect x="1" y="1" width="34" height="34" rx="10" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)"/><path d="M18 8c3.4 2.7 5.2 5.4 5.2 8.9 0 3.9-2.7 6.9-5.2 8.9-2.5-2-5.2-5-5.2-8.9 0-3.5 1.8-6.2 5.2-8.9Z" fill="#5fd08a" fill-opacity=".2" stroke="#5fd08a" stroke-width="1.5" stroke-linejoin="round"/><path d="M18 10.4v14.6" stroke="#5fd08a" stroke-width="1.4" stroke-linecap="round"/><circle cx="18" cy="17.2" r="2.7" fill="#7fb8ff"/></svg>
+          <img class="mark" src="/okri-mark-white.png" alt="OKRI" width="98" height="97" />
           <span class="wm"><b>OKRI</b><span class="dv"></span><span class="ko"><span class="kr">옥천당 한의약연구소</span><span class="en">Okcheondang KM Research</span></span></span>
         </a>
         <p><span class="kr">전통과 혁신이 만나는 한의학 지식 플랫폼이자 싱크탱크. 한의학을 일상에 더 가깝게, 그리고 세계로 확장합니다.</span><span class="en">A knowledge platform and think tank where tradition meets innovation — bringing Korean medicine closer to life, and to the world.</span></p>
